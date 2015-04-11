@@ -1,0 +1,36 @@
+html{height:100%;}
+body{
+  display:flex;
+  flex-direction:column;
+  font-family: sans-serif;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-between;
+  width:100%;
+  height:100%
+}
+
+.continuum{
+  color: #f9f9f9;
+  display: block;
+  font-size: 4em;
+  line-height: 2em;
+  padding:0 3em;
+  background: #f9f9f9;
+  animation: textspace 6s alternate infinite;
+  text-align: center;
+  text-shadow: 0 0 1px #000;
+  &.left{
+    text-align: left;
+  }
+  &.right{
+    text-align: right;
+  }
+}
+
+@keyframes textspace{
+  from{
+    letter-spacing: -0.5em;
+    color: transparent;
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>alexaault</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/modernizr.js"></script>
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!--<div class="continuum left">continuum</div>-->
+<div class="continuum"><span>alexa ault's workspace</span></div>
+<!--<div class="continuum right">continuum</div>-->
+
+<section class="experience_links accordion">
+
+	<img src="images/icelantic-banner.png" alt="icelantic-banner">
+		<div class="icelantic-skis_block work-info">
+			<h2>DESCRIPTION:</h2>
+			<p>Contracted </p>
+			<br>
+			<h2>Role:</h2>
+			<p>Marketing Coordinator</p>
+			<br>
+			<img src="images/event-1.png" alt="tpw-banner">
+
+
+		</div>
+
+	<img src="images/tpw-banner.png" alt="tpw-banner">
+		<div class="tpw_block work-info">
+		</div>
+
+	<img src="images/mason-jar-banner.png" alt="mason-jar-banner">
+		<div class="bernardin_block work-info">
+		</div>
+
+	<img src="images/ccm-banner.png" alt="ccm-banner">
+		<div class="ccm_block work-info">
+		</div>
+
+	<img src="images/lululemon-banner.png" alt="lulu-banner">
+		<div class="lululemon_block work-info">
+		</div>
+
+</section>
+
+
+
+<section class="ccm_link">
+	<img src="images/ccm-logo-large.png" alt="ccm-logo">
+
+</section>
+
+
+<section class="footer">
+
+
+
+			<div class="music block">
+				<a href="#">
+				<img src="images/jams-icon.png" alt="headphones">
+				</a>
+			</div>
+
+			<div class="resume block">
+				<a href="#">
+				<img src="images/resume-icon.png" alt="resume-icon">
+				</a>
+		
+			</div>
+
+			<div class="read block">
+				<a href="http://www.thedenveregotist.com/news/local">
+				<img src="images/good-reads-icon.png" alt="reading-icon">
+				</a>
+				
+			</div>
+
+			<div class="linkedin block">
+				<a href="https://www.linkedin.com/pub/dir/Alexa/Ault">
+					<img src="images/linkedin-icon.png" alt="linkedin-icon">
+				</a>
+
+			</div>
+
+	
+
+</section>
+
+<section class="contact_me">
+	<p>I AM A MAKER, DREAMER, AND CREATOR. REACH OUT TO ME AT ALEXAAULT@ME.COM</p>
+</section>
+
+</div> <!--this is the end of the container-->
+
+<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+    
+  var allPanels = $('.work-info').hide();
+    
+  $('.accordion > img').click(function() {
+    allPanels.slideUp();
+    $(this).next(".work-info").slideDown();
+    return false;
+  });
+
+});
+
+</script>
+
+
+</body>
+
+</html>
