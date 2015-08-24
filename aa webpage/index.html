@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>alexaault</title>
+
+   <link rel='shortcut icon' href='images/favicon.png'>
+  <meta rel='icon' sizes='192x192' href='images/favicon.png'>
+
+  <link rel="stylesheet" href="css/reset.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  	<img src="images/header.png" alt="header image">
+
+  	<div class="opening-quote">
+		<p>“The best journeys answer questions that in the beginning you did not even think to ask.”
+		<br> -Yvon Chouinard
+		</p>
+	</div>
+
+	<div class="pages">
+		<a href="about.html"><img src="images/about.png" alt="about"></a>
+		<a href="work.html"><img src="images/work.png" alt="work"></a>
+	</div>
+
+	<!-- <footer class="footer">
+
+
+
+		<div class="music block">
+			<a href="https://embed.spotify.com/?uri=spotify%3Auser%3A123402830%3Aplaylist%3A6l2RO0yZMmWCPUfSL6GzrV" target="_blank">
+				<p>Jams</p>
+			</a>
+		</div>
+
+		<div class="resume block">
+			<a href="alexa-ault-resume.pdf" target="_blank" download>
+				<p>Resume</p>
+			</a>
+	
+		</div>
+
+		<div class="read block">
+			<a href="http://www.fastcompany.com/" target="_blank">
+				<p>Good Reads</p>
+			</a>
+			
+		</div>
+
+		<div class="linkedin block">
+			<a href="https://www.linkedin.com/pub/alexa-ault/64/503/31a" target="_blank">
+				<p>Connect</p>
+			</a>
+
+		</div> -->
+		
+		<section class="contact_me">
+			<p>THIS SITE WAS CODED BY HAND IN 2015. LETS CREATE CHANGE. REACH OUT TO ME AT <a href="mailto:alexaault@me.com">ALEXAAULT@ME.COM</a></p>
+		</section>
+
+		
+
+	</footer>
+
+</div> <!--end container-->
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+    
+  var allPanels = $('.work-info').hide();
+    
+  $('.accordion > img').click(function(event) {
+
+  	if ($(this).hasClass('active')) {
+  		$(this).removeClass('active')
+  			.next(".work-info").slideUp();
+  	} else {
+  		$('.active').removeClass('active')
+  			.next(".work-info").slideUp();
+  		$(this).addClass('active')
+  			.next(".work-info").slideDown();
+  	}
+  });
+
+});
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'Mohave';
+  src: url('../fonts/Mohave.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Mohave-Bold';
+  font-weight: bold;
+  src: url('../fonts/Mohave-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gyre';
+  src: url('../fonts/texgyreadventor-regular.otf') format('opentype');
+}
+
+/* =============================================
+GLOBAL========================================*/
+
+html {
+  background: #fff;
+  box-sizing: border-box;
+  color: #000;
+}
+
+body {
+  font-family: "Mohave", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ====================================================
+OPENING QUOTE=======================================*/
+
+.opening-quote {
+  text-align: center;
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* ====================================================
+ABOUT TAB=======================================*/
+
+#first {
+  text-align: center;
+  font-size: 3rem;
+  margin: 5%;
+  padding: 5%;
+}
+
+#second {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  -webkit-text-stroke: 1.4px black;
+}
+
+#paragraph {
+  font-family: "Gyre";
+  margin: 2% 22%;
+}
+
+#skill_set {
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 128px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.me {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 150px;
+ 
+}
+
+/* ====================================================
+LINKS TO PAGE=======================================*/
+
+.pages {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+
+/* ====================================================
+EXPERIENCE LINKS=======================================*/
+.experience_links {
+  margin: 20px auto;
+  width: 80%;
+}
+
+  .experience_links img {
+    background: #FFFFFF;
+    margin: 0;
+  }
+
+  /* ====================================================
+inside accordin=======================================*/
+
+  .work-info {
+    padding: 50px;
+    font-family: 'Gyre';
+  }
+
+    .work-info h2 {
+      font-weight: bold;
+      text-align: center;
+      font-size: 2rem;
+      margin: 50px;
+      font-family: 'Mohave-Bold';
+      clear: both;
+      padding: 50px;
+      padding-bottom: 20px;
+    }
+
+    .work-info h3 {
+      font-family: "Mohave-Bold",Mohave,sans-serif;
+      text-align: center;
+    }
+
+    .brief_par {
+      width: 100%;
+    }
+
+    .brief_par p {
+      width: 47.5%;
+      float: left;
+    }
+
+    .brief_par p:nth-child(2) {
+      margin-left: 5%;
+    }
+
+    #prototype {
+      margin-left: 27%;
+      margin-top: -15%;
+    }
+
+
+
+/* =============================================
+On some accordins=======================================*/
+
+
+      .line {
+        text-align: center;
+        margin: 50px;
+      }
+
+      .clickhere img {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      #yeti-container{
+        float: right;
+        width: 1000px;
+        padding:0;
+        margin:0;
+        background: #fff;
+      }
+
+      .yeti-image{
+        margin:0 10px 0 0;
+        float: right;
+        padding: 0;
+      }
+
+
+        .yeti-images img {
+          width: 100%;
+      
+      }
+
+      .yeti_process {
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+        width: 90%;
+      }
+
+      .close_click img{
+        width: 100%;
+      }
+
+      .images_centered img {
+        width: 100%;
+      }
+
+
+
+
+/* =============================================
+FOOTER BLOCKS=======================================*/
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  margin: 0 auto;
+  width: 80%;
+}
+
+  .block{
+    border-bottom: 2px dashed #000;
+    border-top: 2px dashed #000;
+    display: flex;
+    flex-direction: row;
+    margin: 60px 0 60px;
+    padding: 20px 0;
+    width: 25%;
+  }
+
+    .block a {
+      color: #000;
+      font-size: 1.5rem;
+      margin: 0 auto;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .block a p {
+      text-align: center;
+    }
+
+
+
+
+/* ===============================================
+CONTACT ME=======================================*/
+
+.contact_me {
+  font-size: 1.1rem;
+  margin: 30px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contact_me a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+
+
+/* ==================================================
+MEDIA QUERIES=======================================*/
+
+@media (max-width: 786px) {
+
+
+/* ====================================================
+EXPERIENCE LINKS=======================================*/
+.experience_links {
+  width: 100%;
+}
+
+  .work-info {
+    padding: 20px;
+  }
+
+  .work-info strong {
+    font-weight: bold;
+    text-align: center;
+  }
+
+    .image-gallery {
+      display: flex;
+      flex-flow: row wrap;
+      margin: 20px 0;
+    }
+
+      .image-gallery img {
+        margin: 1%;
+        height: 48%;
+        width: 48%;
+      }
+
